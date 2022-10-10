@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Metadonnees du site, link vers le css, description, auteur -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,15 +14,18 @@
 </head>
 
 <body>
+    <!-- Conteneur de la page (pour mettre 100% de la page) -->
     <div id="page">
+        <!-- Navigation du site -->
         <nav class="navigation">
             <ul role="menu">
                 <li role="menuitem" aria-haspopup="false"><a href="index.html">Introduction</a></li>
                 <li role="menuitem" aria-haspopup="false"><a href="education.html">Éducation</a></li>
-                <li role="menuitem" aria-haspopup="true"><a href="carriere.html">Carrière</a>
+                <li role="menuitem" aria-haspopup="false"><a href="carriere.html">Carrière</a>
                 </li>
-                <li role="menuitem" aria-haspopup="false"><a href="#">Réalisation +</a>
-                    <ul role="menu" class="drop-down">
+                <li role="menuitem" aria-haspopup="true"><a href="#">Réalisation +</a>
+                    <!-- Dropdown menu pour la section realisation -->
+                    <ul role="menu" class="deroulant">
                         <li role="menuitem" aria-haspopup="false"><a href="realisations.html#photo_1">Photo 1</a></li>
                         <li role="menuitem" aria-haspopup="false"><a href="realisations.html#photo_2">Photo 2</a></li>
                         <li role="menuitem" aria-haspopup="false"><a href="realisations.html#photo_3">Photo 3</a></li>
@@ -36,44 +41,62 @@
                 <li role="menuitem" aria-haspopup="false"><a href="validation.html">Validation</a></li>
             </ul>
         </nav>
+        <!-- En-tete de la page -->
         <header>
-            <h1>Contact</h1>
+            <h1>Contactez-moi</h1>
         </header>
         <main>
-            <div class="form">
-                <form action="">
-                    <div class="row">
-                        <div class="col">
-                            <label for="f_name">Prenom:</label>
-                            <input class="form-control" type="text" id="f_name" name="f_name">
+            <section class="formulaire">
+                <form action="envoyer.html" method="get">
+
+                    <div class="ligne_contact">
+                        <div class="colonne_contact">
+                            <label for="prenom">*Prénom</label>
+                            <input type="text" id="prenom" name="prenon">
                         </div>
-                        <div class="col">
-                            <label for="l_name">Nom:</label>
-                            <input class="form-control" type="text" id="l_name" name="l_name">
-                        </div>
-                        <div class="col">
-                            <label for="email"> Email:</label>
-                            <input class="form-control" type="email" id="email" name="email">
-                        </div>
-                        <div class="col">
-                            <label for="sujet">Sujet:</label>
-                            <input class="form-control" type="text" id="sujet" name="sujet">
-                        </div>
-                        <div class="col">
-                            <label class="commentaire" for="commentaire">Commentaire:</label>
-                            <textarea class="form-control" name="commentaire" id="commentaire" cols="25"
-                                rows="10"></textarea>
+                        <div class="colonne_contact">
+                            <label for="adresse">Adresse</label>
+                            <input type="text" id="adresse" name="adresse">
                         </div>
                     </div>
+                    <div class="ligne_contact">
+                        <div class="colonne_contact">
+                            <label for="courriel">Courriel</label>
+                            <input type="email" id="courriel" name="courriel">
+                        </div>
+                        <div class="colonne_contact">
+                            <label for="dob">Date de naissance</label>
+                            <input type="date" id="dob" name="naissance">
+                        </div>
+                    </div>
+                    <div class="ligne_contact">
+                        <div class="colonne_contact">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age">
+                        </div>
+                        <div class="colonne_contact">
+                            <label for="Satisfaction">Etes-vous satisfait de votre navigation sur le site web:</label>
+
+                            <select name="selection" id="selection">
+                                <option value="oui">Oui</option>
+                                <option value="non">Non</option>
+                                <option value="aucun">Aucune de ces reponses</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Envoyer -->
+                    <input type="submit" value="Saisir">
+                    <!--<button>Saisir 2</button>-->
                 </form>
-            </div>
+            </section>
         </main>
 
 
     </div>
-
+    <!-- Footer de mes pages html-->
     <footer>
-        <div class="conteneur">
+        <div class="conteneur-footer">
             <div class="section-nom">
                 <h1>Félix Boutin-Cousineau</h1>
             </div>

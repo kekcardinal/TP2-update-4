@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Metadonnees du site, link vers le css, description, auteur -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,15 +14,18 @@
 </head>
 
 <body>
+    <!-- Conteneur de la page (pour mettre 100% de la page) -->
     <div id="page">
+        <!-- Navigation du site -->
         <nav class="navigation">
             <ul role="menu">
                 <li role="menuitem" aria-haspopup="false"><a href="index.html">Introduction</a></li>
                 <li role="menuitem" aria-haspopup="false"><a href="education.html" class="active">Éducation</a></li>
-                <li role="menuitem" aria-haspopup="true"><a href="carriere.html">Carrière</a>
+                <li role="menuitem" aria-haspopup="false"><a href="carriere.html">Carrière</a>
                 </li>
-                <li role="menuitem" aria-haspopup="false"><a href="#">Réalisation +</a>
-                    <ul role="menu" class="drop-down">
+                <li role="menuitem" aria-haspopup="true"><a href="#">Réalisation +</a>
+                    <!-- Dropdown menu pour la section realisation -->
+                    <ul role="menu" class="deroulant">
                         <li role="menuitem" aria-haspopup="false"><a href="realisations.html#photo_1">Photo 1</a>
                         </li>
                         <li role="menuitem" aria-haspopup="false"><a href="realisations.html#photo_2">Photo 2</a>
@@ -45,13 +50,16 @@
                 <li role="menuitem" aria-haspopup="false"><a href="validation.html">Validation</a></li>
             </ul>
         </nav>
+        <!-- En-tete de la page -->
         <header>
             <h1>Éducation</h1>
         </header>
         <main>
             <section class="education">
+                <!-- Tableau education-->
                 <div class='conteneur-education'>
                     <div class='ligne-education'>
+
                         <div class='colonne-education'>
                             <table>
                                 <thead></thead>
@@ -76,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Tableau education-->
                 <div class='conteneur-education'>
                     <div class='ligne-education'>
                         <div class='colonne-education'>
@@ -107,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Tableau education-->
                 <div class='conteneur-education'>
                     <div class='ligne-education'>
                         <div class='colonne-education'>
@@ -140,9 +148,9 @@
             </section>
         </main>
     </div>
-
+    <!-- Footer de mes pages html-->
     <footer>
-        <div class="conteneur">
+        <div class="conteneur-footer">
             <div class="section-nom">
                 <h1>Félix Boutin-Cousineau</h1>
             </div>
